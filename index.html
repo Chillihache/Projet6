@@ -3,195 +3,208 @@
     <head>
         <meta charset="utf-8">
         <title>JustStreamIt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="styles/style.css" rel="stylesheet"/>
+        <script type="module" src="scripts/main.js" defer></script>
     </head>
     <body>
         <header> 
             <div class="rectangleHeader">
-                <img src="logo.png" alt="logo JustStreamIt"/>
+                <img id="test" src="logo.png" alt="logo JustStreamIt"/>
                 <p>Vidéos à la demande</p>
             </div>
         </header>
         <main>
             <h1 id="h1BestMovie">Meilleur film</h1>
             <div class="rectangleBestMovie">
-                <img src="https://picsum.photos/id/237/200/300" alt="img best movie"/>
+                <img src="" alt="img best movie"/>
                 <div class="elementsBestMovie">
-                    <h2>Titre du meilleur film</h2>
-                    <p>sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
-                        turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit 
-                        dolor magna eget est</p>
+                    <h2></h2>
+                    <p></p>
                     <button id="buttonBestMovie">Détails</button>
                 </div>
+            </div>  
+            <h1 id="h1BestMovies">Films les mieux notés</h1>
+            <div class="categoryBox">
+                <div class="box">
+                    <img id="imgBestMovies1" src="" alt="best score movies 1" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleBestMovies1" ></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgBestMovies2" src="" alt="best score movies 2" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleBestMovies2"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgBestMovies3" src="" alt="best score movies 3" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleBestMovies3"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgBestMovies4" src="" alt="best score movies 4" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleBestMovies4"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgBestMovies5" src="" alt="best score movies 5" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleBestMovies5"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgBestMovies6" src="" alt="best score movies 6" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleBestMovies6"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
             </div>
-                
-            <h1>Mystery</h1>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img mystery movie 1"/>
-                <p>Titre film 1</p>
-                <button>Détails</button>
+            <h1 id="h1Genre1"></h1>
+            <div class="categoryBox">
+                <div class="box">
+                    <img id="imgGenre1Movie1" src="" alt="img category 1 movie 1" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleGenre1Movie1"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgGenre1Movie2" src="" alt="img category 1 movie 2" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleGenre1Movie2"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgGenre1Movie3" src="" alt="img category 1 movie 3" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleGenre1Movie3"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgGenre1Movie4" src="" alt="img category 1 movie 4" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleGenre1Movie4"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgGenre1Movie5" src="" alt="img category 1 movie 5" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleGenre1Movie5"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgGenre1Movie6" src="" alt="img category 1 movie 6" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleGenre1Movie6"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img mystery movie 2"/>
-                <p>Titre film 2</p>
-                <button>Détails</button>
+            <h1 id="h1Genre2"></h1>
+            <div class="categoryBox">
+                <div class="box">
+                    <img id="imgGenre2Movie1" src="" alt="img category 2 movie 1" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleGenre2Movie1"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgGenre2Movie2" src="" alt="img category 2 movie 2" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleGenre2Movie2"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgGenre2Movie3" src="" alt="img category 2 movie 3" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleGenre2Movie3"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgGenre2Movie4" src="" alt="img category 2 movie 4" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleGenre2Movie4"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgGenre2Movie5" src="" alt="img category 2 movie 5" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleGenre2Movie5"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgGenre2Movie6" src="" alt="img category 2 movie 6" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleGenre2Movie6"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img mystery movie 3"/>
-                <p>Titre film 3</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img mystery movie 4"/>
-                <p>Titre film 4</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img mystery movie 5"/>
-                <p>Titre film 5</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img mystery movie 1"/>
-                <p>Titre film 6</p>
-                <button>Détails</button>
-            </div>
-            <h1>Catégorie 2</h1>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img category 1 movie 1"/>
-                <p>Titre film 1</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img category 1 movie 2"/>
-                <p>Titre film 2</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img category 1 movie 3"/>
-                <p>Titre film 3</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img category 1 movie 4"/>
-                <p>Titre film 4</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img category 1 movie 5"/>
-                <p>Titre film 5</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img category 1 movie 6"/>
-                <p>Titre film 6</p>
-                <button>Détails</button>
-            </div>
-            <h1>Catégorie 3</h1>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img category 2 movie 1"/>
-                <p>Titre film 1</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img category 2 movie 2"/>
-                <p>Titre film 2</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img category 2 movie 3"/>
-                <p>Titre film 3</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img category 2 movie 4"/>
-                <p>Titre film 4</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img category 2 movie 5"/>
-                <p>Titre film 5</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img category 2 movie 6"/>
-                <p>Titre film 6</p>
-                <button>Détails</button>
-            </div>
-            <h1 id="other1">Autres :</h1>
-            <select id="selectOther1">
-                <option value="action">Action</option>
-                <option value="adventure">Aventure</option>
-                <option value="animation">Animation</option>
+            <label class="labelSelector">Autres :</label> <select class="selectorButton">
             </select>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img others 1 movie 1"/>
-                <p>Titre film 1</p>
-                <button>Détails</button>
+            <div class="categoryBox" id="selectedGenreBoxes">
+                <div class="box">
+                    <img id="imgSelectedGenreMovie1" src="" alt="img other1 movie 1" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleSelectedGenreMovie1"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgSelectedGenreMovie2" src="" alt="img other1 movie 2" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleSelectedGenreMovie2"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgSelectedGenreMovie3" src="" alt="img other1 movie 3" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleSelectedGenreMovie3"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgSelectedGenreMovie4" src="" alt="img other1 movie 4" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleSelectedGenreMovie4"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgSelectedGenreMovie5" src="" alt="img other1 movie 5" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleSelectedGenreMovie5"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <img id="imgSelectedGenreMovie6" src="" alt="img other1 movie 6" class="background"/>
+                    <div class="rectangleMovie">
+                        <p id="titleSelectedGenreMovie6"></p>
+                        <button>Détails</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img others 1 movie 2"/>
-                <p>Titre film 2</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img others 1 movie 3"/>
-                <p>Titre film 3</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img others 1 movie 4"/>
-                <p>Titre film 4</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img others 1 movie 5"/>
-                <p>Titre film 5</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img others 1 movie 6"/>
-                <p>Titre film 6</p>
-                <button>Détails</button>
-            </div>
-            <h1 id="other2">Autres :</h1>
-            <select id="selectOther1">
-                <option value="action">Action</option>
-                <option value="adventure">Aventure</option>
-                <option value="animation">Animation</option>
-            </select>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img others 2 movie 1"/>
-                <p>Titre film 1</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img others 2 movie 2"/>
-                <p>Titre film 2</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img others 2 movie 3"/>
-                <p>Titre film 3</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img others 2 movie 4"/>
-                <p>Titre film 4</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img others 2 movie 5"/>
-                <p>Titre film 5</p>
-                <button>Détails</button>
-            </div>
-            <div>
-                <img src="https://picsum.photos/seed/picsum/200/400" alt="img others 2 movie 6"/>
-                <p>Titre film 6</p>
-                <button>Détails</button>
-            </div>
-         
-
         </main>
     </body>
 </html>

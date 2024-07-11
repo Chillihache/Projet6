@@ -1,18 +1,26 @@
-async function fetchData() {
-    try {
-      const response = await fetch("http://localhost:8000/api/v1/images")
-      if (!response.ok) {
-        throw new Error("Erreur : " + response.statusText)
-      }
-      const jsonData = await response.json()
-      return jsonData;
-    } catch (error) {
-      console.error("Erreur fetch: " + error)
-    }
-  }
-  
-  // Appeler la fonction et utiliser les données
-  fetchData().then(data => {
-    console.log("Resultat :", data)
-  });
-  
+import { loadBestMovie } from './loadBestMovie.js'
+import { loadBestMovies } from './loadBestMovies.js'
+import { loadGenre1 } from './loadGenre1.js'
+import { loadGenre2 } from './loadGenre2.js'
+import { loadAllGenres } from './loadAllGenres.js'
+import { loadSelectedGenre } from './loadSelectedGenre.js'
+
+loadBestMovie()
+loadBestMovies()
+loadGenre1()
+loadGenre2()
+loadAllGenres()
+
+document.addEventListener("DOMContentLoaded", function() {
+    const selectorButton = document.querySelector(".selectorButton");
+
+    loadSelectedGenre(selectorButton.value);
+
+    selectorButton.addEventListener("change", (event) => {
+
+        loadSelectedGenre(selectorButton.value);
+    });
+});
+
+
+
