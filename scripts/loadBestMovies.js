@@ -19,10 +19,10 @@ export function loadBestMovies() {
             
             for (let i = 0; i < 6; i++ ) {
                 fetchData(listeUrlBestMovies[i]).then(dataBestMovieDetails => {
-                    let imgBestMovies = document.getElementById(`imgBestMovies${i+1}`)
+                    let imgBestMovies = document.getElementById(`imgBestMoviesMovie${i+1}`)
                     imgBestMovies.src = dataBestMovieDetails.image_url
 
-                    let titleBestMovies = document.getElementById(`titleBestMovies${i+1}`)
+                    let titleBestMovies = document.getElementById(`titleBestMoviesMovie${i+1}`)
                     titleBestMovies.textContent = dataBestMovieDetails.title
                 })
             }

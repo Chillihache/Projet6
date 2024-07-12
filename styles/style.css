@@ -126,6 +126,10 @@
         margin: 1em;
     }
 
+    .buttonShowMore {
+        display: None;
+    }
+
     .labelSelector {
         font-size: 4rem;
         font-weight: bold;
@@ -144,6 +148,18 @@
 
     .selectorButton option {
         border: 1px solid black;
+    }
+
+    #modalDetails {
+       
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgba(0, 0, 0, 0.4);
     }
 }
 
@@ -225,6 +241,14 @@
     .categoryBox {
         display: grid;
         grid-template-columns: 36rem 36rem;
+        grid-template-rows: 36rem 36rem;
+        width: 85.2rem;
+        height: 72rem;
+    }
+
+    .categoryBoxShowMore {
+        display: grid;
+        grid-template-columns: 36rem 36rem;
         grid-template-rows: 36rem 36rem 36rem;
         width: 85.2rem;
         height: 108rem;
@@ -234,6 +258,10 @@
         position: relative;
         padding-inline: 4rem;
         padding-block: 2rem;
+    }
+
+    .hideOnTablet {
+        display: None;
     }
 
     .background {
@@ -276,6 +304,24 @@
         bottom: 0;
         right: 0;
         margin: 1em;
+    }
+
+    .buttonShowMore {
+        display: block;
+        background-color: red;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 1em;
+        width: 20rem;
+        height: 3rem;
+        margin-left: 26rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        border: 0;
+    }
+
+    .hideButtonShowMore {
+        display: none;
     }
 
     .labelSelector {
@@ -372,7 +418,15 @@
     .categoryBox {
         display: grid;
         grid-template-columns: 56rem;
-        grid-template-rows: 56rem 56rem 56rem 56rem 56rem 56rem ;
+        grid-template-rows: 56rem 56rem;
+        width: 36rem;
+        height: 112rem;
+    }
+
+    .categoryBoxShowMore {
+        display: grid;
+        grid-template-columns: 56rem;
+        grid-template-rows: 56rem 56rem 56rem 56rem 56rem 56rem;
         width: 36rem;
         height: 336rem;
     }
@@ -383,13 +437,16 @@
         padding-block: 3rem;
     }
 
+    .hideOnPhone {
+        display: none;
+    }
+
     .background {
         
         display: flex;
         width: 100%;    
         height: 100%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);    
     }
 
     .rectangleMovie {
@@ -423,6 +480,24 @@
         bottom: 0;
         right: 0;
         margin: 2em;
+    }
+
+    .buttonShowMore {
+        display: block;
+        background-color: red;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 1em;
+        width: 20rem;
+        height: 3rem;
+        margin-left: 17rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        border: 0;
+    }
+
+    .hideButtonShowMore {
+        display: none;
     }
 
     .labelSelector {

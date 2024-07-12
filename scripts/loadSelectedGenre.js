@@ -6,6 +6,9 @@ export async function loadSelectedGenre(genre) {
     let listeUrlSelectedGenre = []
     let dataSelectedGenre = await fetchData(urlSelectedGenre)
     let selectedGenreBoxes = document.querySelectorAll("#selectedGenreBoxes .box")
+    let button = document.getElementById("showMoreSelectedGenre")
+    
+    button.classList.remove("hideButtonShowMore")
     
     for (let i = 0; i < selectedGenreBoxes.length; i++) {
         selectedGenreBoxes[i].remove()
@@ -21,6 +24,12 @@ export async function loadSelectedGenre(genre) {
 
         let divBox = document.createElement('div')
         divBox.classList.add('box')
+        if (i === 4) {
+            divBox.classList.add('hideOnTablet')
+        }
+        if (i > 1){
+            divBox.classList.add("hideOnPhone")
+        }
 
         let img = document.createElement('img')
         img.id = `imgSelectedGenreMovie${i+1}`
@@ -57,6 +66,8 @@ export async function loadSelectedGenre(genre) {
 
         let divBox = document.createElement('div')
         divBox.classList.add('box')
+        divBox.classList.add('hideOnTablet')
+        divBox.classList.add("hideOnPhone")
 
         let img = document.createElement('img')
         img.id = `imgSelectedGenreMovie6`
@@ -82,42 +93,9 @@ export async function loadSelectedGenre(genre) {
 
         container.appendChild(divBox)
     }
+
+    if (dataSelectedGenre.results.length < 5) {
+        let button = document.getElementById("showMoreSelectedGenre")
+        button.classList.add("hideButtonShowMore")
+    }
 }
-
-
-/*
-
-    for (let i = 0; i < dataSelectedGenre.results.length; i++){
-
-        listeUrlSelectedGenre.push("http://localhost:8000/api/v1/titles/" + dataSelectedGenre.results[i].id)
-    }
-
-    
-
-    if (dataSelectedGenre.next != null) {
-        const urlSelectedGenrePage2 = dataSelectedGenre.next
-
-        let dataSelectedGenrePage2 = await fetchData(urlSelectedGenrePage2)
-        
-        listeUrlSelectedGenre.push("http://localhost:8000/api/v1/titles/" + dataSelectedGenrePage2.results[0].id)     
-    }
-
-    for (let i = 0; i < 6; i++ ) {
-        fetchData(listeUrlSelectedGenre[i]).then(dataSelectedGenreDetails => {
-            let imgSelectedGenre = document.getElementById(`imgSelectedGenreMovie${i+1}`)
-            imgSelectedGenre.src = dataSelectedGenreDetails.image_url
-
-            let titleSelectedGenre = document.getElementById(`titleSelectedGenreMovie${i+1}`)
-            titleSelectedGenre.textContent = dataSelectedGenreDetails.title
-        })
-    }
-    for (let i = dataSelectedGenre.results.length; i < 5; i++) {
-        let imgSelectedGenre = document.getElementById(`imgSelectedGenreMovie${i+1}`)
-            imgSelectedGenre.remove()
-
-            let titleSelectedGenre = document.getElementById(`titleSelectedGenreMovie${i+1}`)
-            titleSelectedGenre.remove()
-        
-    }
-            
-} */
