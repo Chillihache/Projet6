@@ -1,7 +1,7 @@
-import { fetchData } from './fetchData.js'
+import { fetchData } from '../helpers/fetchData.js'
 
 export function loadDetails(title, imageUrl) {
-    const urlFindMovie = `http://localhost:8000/api/v1/titles/?title=${title}`
+    const urlFindMovie = `http://localhost:8000/api/v1/titles/?title_contains=${title}`
 
     fetchData(urlFindMovie).then(dataMovieFound => {
         let movieId = ""

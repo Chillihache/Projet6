@@ -1,4 +1,4 @@
-import { fetchData } from './fetchData.js'
+import { fetchData } from '../helpers/fetchData.js'
 
 
 export function loadBestMovies() {

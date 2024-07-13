@@ -1,14 +1,15 @@
-import { loadBestMovie } from './loadBestMovie.js'
-import { loadBestMovies } from './loadBestMovies.js'
-import { loadGenre1 } from './loadGenre1.js'
-import { loadGenre2 } from './loadGenre2.js'
-import { loadAllGenres } from './loadAllGenres.js'
-import { loadSelectedGenre } from './loadSelectedGenre.js'
-import { showMoreOnTablet } from './showMoreOnTablet.js'
-import { showLessOnTablet } from './showMoreOnTablet.js'
-import { showMoreOnPhone } from './showMoreOnPhone.js'
-import { showLessOnPhone } from './showMoreOnPhone.js'
-import { loadDetails } from './loadDetails.js'
+import { loadBestMovie } from './loads/loadBestMovie.js'
+import { loadBestMovies } from './loads/loadBestMovies.js'
+import { loadGenre1 } from './loads/loadGenre1.js'
+import { loadGenre2 } from './loads/loadGenre2.js'
+import { loadAllGenres } from './loads/loadAllGenres.js'
+import { loadSelectedGenre } from './loads/loadSelectedGenre.js'
+import { loadDetails } from './loads/loadDetails.js'
+import { showMoreOnTablet } from './helpers/showMoreOnTablet.js'
+import { showLessOnTablet } from './helpers/showMoreOnTablet.js'
+import { showMoreOnPhone } from './helpers/showMoreOnPhone.js'
+import { showLessOnPhone } from './helpers/showMoreOnPhone.js'
+
 
 function load() {
     loadBestMovie()
@@ -52,12 +53,10 @@ function listeners() {
         document.getElementById("modalDetails").style.display = "none"
     })
 
+    const cross = document.querySelector(".cross")
 
-    document.body.addEventListener("click", (event) => {
-        if(event.target.classList.contains("cross")){
-            document.getElementById("modalDetails").style.display = "none"
-        }
-        
+    cross.addEventListener("click", (event) =>{
+        document.getElementById("modalDetails").style.display = "none"
     })
 
     document.body.addEventListener("click", (event) => {

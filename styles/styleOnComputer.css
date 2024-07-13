@@ -253,4 +253,8 @@
         cursor: pointer;
 
     }
+
+    .cross {
+        display: none;
+    }
 }
