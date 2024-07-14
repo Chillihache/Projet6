@@ -26,7 +26,7 @@ Run the server with :
 
     python manage.py runserver
 
-Then, in the project repository, open the file index.html in your browser
+Enter the URL http://127.0.0.1:5500 in your browser
 
 Directory Composition
 -
