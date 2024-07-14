@@ -13,14 +13,14 @@ export function loadGenre1() {
         fetchData(urlGenre1).then(dataGenre1 => { 
             const urlGenre1Page2 = `http://localhost:8000/api/v1/titles/?genre=${dataGenres.results[0].name}&page=2&sort_by=-imdb_score`
 
-            fetchData(urlGenre1).then(dataGenre1Page2 => {
+            fetchData(urlGenre1Page2).then(dataGenre1Page2 => {
                 let listeUrlGenre1 = []
                 listeUrlGenre1.push("http://localhost:8000/api/v1/titles/" + dataGenre1.results[0].id)
                 listeUrlGenre1.push("http://localhost:8000/api/v1/titles/" + dataGenre1.results[1].id)
                 listeUrlGenre1.push("http://localhost:8000/api/v1/titles/" + dataGenre1.results[2].id)
                 listeUrlGenre1.push("http://localhost:8000/api/v1/titles/" + dataGenre1.results[3].id)
                 listeUrlGenre1.push("http://localhost:8000/api/v1/titles/" + dataGenre1.results[4].id)
-                listeUrlGenre1.push("http://localhost:8000/api/v1/titles/" + dataGenre1Page2.results[0].id) 
+                listeUrlGenre1.push("http://localhost:8000/api/v1/titles/" + dataGenre1Page2.results[0].id)
 
                 for (let i = 0; i < 6; i++ ) {
                     fetchData(listeUrlGenre1[i]).then(dataGenre1Details => {
