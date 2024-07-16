@@ -26,7 +26,7 @@ Run the server with :
 
     python manage.py runserver
 
-Enter the URL http://127.0.0.1:5500 in your browser
+Open the index.html file in VS Code with the Live Server extension
 
 Directory Composition
 -
